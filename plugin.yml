@@ -1,0 +1,11 @@
+name: DualSamurai
+main: dual.samurai.DualSamurai
+version: 1.0.0
+author: amata1219(Twitter-@amata1219)
+
+commands:
+  duals:
+    description: main command.
+    usage: /<command>
+    permission: dual.samurai.duals
+    permission-message: You don't have permission"<permission>".
