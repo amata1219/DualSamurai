@@ -19,7 +19,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityCombustByEntityEvent;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerAnimationEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -133,11 +132,6 @@ public class DualSamurai extends JavaPlugin implements Listener{
 		return commands.get(command.getName()).onCommand(sender, command, label, args);
 	}
 
-	@EventHandler
-	public void test(EntityDamageByEntityEvent e){
-		System.out.println(e.getDamage());
-	}
-
 	public static DualSamurai getDualSamurai(){
 		return plugin;
 	}
@@ -237,10 +231,6 @@ public class DualSamurai extends JavaPlugin implements Listener{
 				}
 			}
 		}
-	}
-
-	public void o(Object o){
-		System.out.println(o);
 	}
 
 	@SuppressWarnings("deprecation")
